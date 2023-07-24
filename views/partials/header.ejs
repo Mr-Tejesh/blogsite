@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default head-navbar">
     <div class="container">
       <div class="navbar-header">
         <p class="navbar-brand">DAILY JOURNAL</p>
@@ -27,6 +27,23 @@
       </ul>
     </div>
   </nav>
+  <script>
+    document.querySelector("#toggleButton").addEventListener("change", function () {
+      if (this.checked) {
 
-<body>
+        document.querySelector(".head-navbar").classList.add("navbar-black")
+        document.querySelector("body").classList.add("body-black")
+        document.querySelector(".footer").classList.add("transparent-footer")
+        const checkboxd = document.querySelector("#toggleButton")
+        const checked = checkboxd.checked;
+        localStorage.setItem(checkboxd, checked)
+      } else {
+        document.querySelector(".head-navbar").classList.remove("navbar-black")
+        document.querySelector("body").classList.remove("body-black")
+        document.querySelector(".footer").classList.remove("transparent-footer")
+      }
+    })
+  </script>
+
+<body class="">
   <div class="container">
