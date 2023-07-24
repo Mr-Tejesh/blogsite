@@ -34,3 +34,53 @@
   color: #fff;
 }
 
+/* Toggle button starts here */
+/* Styling for the toggle button */
+.toggle {
+    position: fixed;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  
+  /* Hide the default checkbox */
+  .toggle input {
+    display: none;
+  }
+  
+  /* Styling the slider (the visual part of the toggle) */
+  .slider {
+    position: absolute;
+    top: 14.5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 22.5px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Change the slider's background color when the toggle is checked */
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: 0.2s;
+  }
+  
+  /* Move the slider to the right when the toggle is checked */
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(17px);
+  }
+  
+  /* Toggle button ends here */
