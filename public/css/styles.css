@@ -1,108 +1,84 @@
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
+
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-.navbar-black {
-    background-color: black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-
-.body-black{
-    background-color: black;
-    color: #F9F6EE;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
 
 
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
 }
 
 .footer-padding {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
-	position: fixed;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
-}
-.transparent-footer{
-    position: fixed;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-    background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
 }
 
 .footer p {
-	margin-top: 25px;
-	font-size: 12px;
+  margin-top: 25px;
+  font-size: 12px;
   color: #fff;
 }
 
 /* Toggle button starts here */
 /* Styling for the toggle button */
 .toggle {
-    position: fixed;
-    display: inline-block;
-    width: 40px;
-    height: 22px;
-  }
-  
-  /* Hide the default checkbox */
-  .toggle input {
-    display: none;
-  }
-  
-  /* Styling the slider (the visual part of the toggle) */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-  }
-  
-  /* Change the slider's background color when the toggle is checked */
-  .slider::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    top: 14.5px;
-    left: 1px;
-    transition: 0.2s;
-  }
-  
-  
-  input:checked + .slider::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    top: 14.5px;
-    left: 1px;
-    transition: 0.2s;
-  }
-  
-  /* Toggle button ends here */
+  position: fixed;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+/* Hide the default checkbox */
+.toggle input {
+  display: none;
+}
+
+
+/* Toggle button ends here */
+
+
+/* Dark mode enabled here */
+.navbar-black {
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.body-black {
+  background-color: black;
+  color: #F9F6EE;
+}
+
+.transparent-footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Dark mode ends here */
