@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Daily Journal</title>
+  <link rel="icon" type="image/x-icon" href="icons8-journal-64.png">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default head-navbar">
     <div class="container">
       <div class="navbar-header">
         <p class="navbar-brand">DAILY JOURNAL</p>
         <div>
           <label class="toggle">
             <input type="checkbox" id="toggleButton">
-            <span class="slider"></span>
+            <img id="darkModeIcon" src="full-moon.png" height="48px" width="48px">
           </label>
         </div>
       </div>
@@ -27,6 +28,26 @@
       </ul>
     </div>
   </nav>
+  <script>
+    document.querySelector("#toggleButton").addEventListener("change", function () {
+      if (this.checked) {
+        document.querySelector('#darkModeIcon').getAttribute('src').remove;
+        document.querySelector('#darkModeIcon').setAttribute('src', 'sun.png')
+        document.querySelector(".head-navbar").classList.add("navbar-black")
+        document.querySelector("body").classList.add("body-black")
+        document.querySelector(".footer").classList.add("transparent-footer")
+        const checkboxd = document.querySelector("#toggleButton")
+        const checked = checkboxd.checked;
+        localStorage.setItem(checkboxd, checked)
+      } else {
+        document.querySelector('#darkModeIcon').getAttribute('src').remove;
+        document.querySelector('#darkModeIcon').setAttribute('src', 'full-moon.png')
+        document.querySelector(".head-navbar").classList.remove("navbar-black")
+        document.querySelector("body").classList.remove("body-black")
+        document.querySelector(".footer").classList.remove("transparent-footer")
+      }
+    })
+  </script>
 
-<body>
+<body class="">
   <div class="container">
