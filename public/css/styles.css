@@ -81,4 +81,9 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
+
 /* Dark mode ends here */
+
+#cache-image{
+  display: none;
+}
